@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xqlh.beatandshout.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rg_main"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/zhihuBlue"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:button="@null"
+            android:clickable="true"
+            android:drawableLeft="@drawable/main_home_rb_select"
+            android:drawablePadding="50dp"
+            android:text="首页"
+            android:textColor="@color/baby_blue"
+            android:textSize="20sp"
+            />
+
+        <com.xqlh.beatandshout.widget.MyRadioButton
+            android:id="@+id/rb_account"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:button="@null"
+            android:clickable="true"
+            android:text="账户管理"
+            android:textColor="@color/baby_blue"
+            android:textSize="30dp"
+            />
+
+        <com.xqlh.beatandshout.widget.MyRadioButton
+            android:id="@+id/rb_monitor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="实时监测"
+            android:textColor="@color/baby_blue"
+            android:textSize="30dp"
+            />
+
+        <com.xqlh.beatandshout.widget.MyRadioButton
+            android:id="@+id/rb_report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="宣泄报告"
+            android:textColor="@color/baby_blue"
+            android:textSize="30dp"
+            />
+
+        <com.xqlh.beatandshout.widget.MyRadioButton
+            android:id="@+id/rb_resources"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="资源管理"
+            android:textColor="@color/baby_blue"
+            android:textSize="30dp"
+            />
+
+        <com.xqlh.beatandshout.widget.MyRadioButton
+            android:id="@+id/rb_setting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="系统设置"
+            android:textColor="@color/baby_blue"
+            android:textSize="30dp"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

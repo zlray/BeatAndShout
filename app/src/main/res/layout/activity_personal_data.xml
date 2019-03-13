@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xqlh.beatandshout.login.PersonalDataActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="编辑个人资料"
+        android:textColor="#6b7af9"
+        android:textSize="50sp"/>
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/include_personal_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/include2"
+        android:layout_below="@+id/tv">
+    </include>
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout="@layout/include_personal_data">
+    </include>
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_personal_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true">
+    </include>
+</RelativeLayout>

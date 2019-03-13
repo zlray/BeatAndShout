@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xqlh.beatandshout.brainwave.BrainWaveActivity">
+
+    <TextView
+        android:id="@+id/tv_infor"
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        android:layout_below="@+id/instrumentView_attention"
+        android:gravity="center"
+        android:textColor="@color/color_title_bar"
+        android:textSize="14sp"></TextView>
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_title_bar"
+        android:text="点击连接"
+        android:textColor="@color/white"></Button>
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        android:textColor="@color/white"></Button>
+
+</LinearLayout>

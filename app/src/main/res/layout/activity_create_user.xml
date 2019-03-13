@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xqlh.beatandshout.account.CreateUserActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="基本信息"
+        android:textColor="@color/text"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="用户名："
+                    />
+
+                <EditText
+                    android:id="@+id/et_account"
+                    style="@style/create_account_et"
+                    android:hint="abc123456"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="密码："
+                    />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/create_account_et"
+                    android:hint="123456"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="真实姓名："
+                    />
+
+                <EditText
+                    android:id="@+id/et_real_name"
+                    style="@style/create_account_et"
+                    android:hint="例如：张三"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="性别："
+                    />
+
+                <EditText
+                    android:id="@+id/et_sex"
+                    style="@style/create_account_et"
+                    android:hint="填写性别:男/女"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="身高(cm)："
+                    />
+
+                <EditText
+                    android:id="@+id/et_height"
+                    style="@style/create_account_et"
+                    android:hint="170"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="体重(kg)："
+                    />
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    style="@style/create_account_et"
+                    android:hint="50"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll3"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_17"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/create_account_tv"
+                    android:text="年龄："
+                    />
+
+                <Button
+                    android:id="@+id/bt_age"
+                    style="@style/create_account_et"
+                    android:hint="2018-10-18"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="@dimen/dp_17"
+            android:layout_below="@+id/ll4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_login"
+                android:text="保存"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_login"
+                android:text="取消"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="用户名："
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/xqlhBlue"
+        >
+
+        <EditText
+            android:id="@+id/et_personal1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="您的学号是？"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="真实姓名："
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/xqlhBlue">
+
+        <EditText
+            android:id="@+id/et_personal2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="答案答案"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

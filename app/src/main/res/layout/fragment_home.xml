@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                tools:context="com.xqlh.beatandshout.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_152"
+        android:layout_height="@dimen/dp_15"
+        android:layout_alignTop="@+id/iv_logo"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:gravity="center"
+        android:text="多维智能击打呐喊训练系统"
+        android:textColor="@color/text"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_one"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/monitoring_one">
+
+            <TextView
+                android:id="@+id/tv_user_number"
+                style="@style/home_text_one"
+                android:text="58"/>
+
+            <TextView
+                style="@style/home_text_two"
+                android:layout_below="@+id/tv_user_number"
+                android:text="用户数"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_two"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/monitoring_two">
+
+            <TextView
+                android:id="@+id/tv_train_report"
+                style="@style/home_text_one"
+                android:text="58"/>
+
+            <TextView
+                style="@style/home_text_two"
+                android:layout_below="@+id/tv_train_report"
+                android:text="主题训练报告"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_three"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/monitoring_three">
+
+            <TextView
+                android:id="@+id/tv_beat_report"
+                style="@style/home_text_one"
+                android:text="58"/>
+
+            <TextView
+                style="@style/home_text_two"
+                android:layout_below="@+id/tv_beat_report"
+                android:text="快速击打报告"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_four"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_55"
+            android:layout_weight="1"
+            android:background="@drawable/monitoring_four">
+
+            <TextView
+                android:id="@+id/tv_shout_report"
+                style="@style/home_text_one"
+                android:text="58"/>
+
+            <TextView
+                style="@style/home_text_two"
+                android:layout_below="@+id/tv_shout_report"
+                android:text="快速呐喊报告"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_monitoring"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_15"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/monitoring"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_15"
+        android:layout_alignTop="@+id/iv_monitoring"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:gravity="center"
+        android:text="实时监测"
+        android:textColor="@color/text"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv_monitoring"
+        android:background="@drawable/monitoring_five">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center"
+            android:text="心企领航"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_8"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:gravity="center"
+            android:text="工作学习压力等级-10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_6"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_attention"
+            style="@style/home_rl_one"
+            android:layout_toRightOf="@+id/tv_user_name">
+
+            <TextView
+                android:id="@+id/tv_a"
+                style="@style/home_text_three"
+                android:text="专  注  度"
+                />
+
+            <TextView
+                android:id="@+id/tv_attention"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_a"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mediation"
+            style="@style/home_rl_one"
+            android:layout_toRightOf="@+id/rl_attention">
+
+            <TextView
+                android:id="@+id/tv_b"
+                style="@style/home_text_three"
+                android:text="放  松  度"
+                />
+
+            <TextView
+                android:id="@+id/tv_mediation"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_b"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_beat_number"
+            style="@style/home_rl_one"
+            android:layout_toRightOf="@+id/rl_mediation">
+
+            <TextView
+                android:id="@+id/tv_c"
+                style="@style/home_text_three"
+                android:text="击打次数"
+                />
+
+            <TextView
+                android:id="@+id/tv_beat_number"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_c"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_beat_power"
+            style="@style/home_rl_one"
+            android:layout_below="@+id/tv_level"
+            android:layout_toRightOf="@+id/rl_beat_number">
+
+            <TextView
+                android:id="@+id/tv_d"
+                style="@style/home_text_three"
+                android:text="击   打   力"
+                />
+
+            <TextView
+                android:id="@+id/tv_beat_power"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_d"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_speed"
+            style="@style/home_rl_one"
+            android:layout_below="@+id/rl_attention"
+            android:layout_toRightOf="@+id/tv_user_name">
+
+            <TextView
+                android:id="@+id/tv_e"
+                style="@style/home_text_three"
+                android:text="拳         速"
+                />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_e"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_frequency"
+            style="@style/home_rl_one"
+            android:layout_below="@+id/rl_attention"
+            android:layout_toRightOf="@+id/rl_speed">
+
+            <TextView
+                android:id="@+id/tv_f"
+                style="@style/home_text_three"
+                android:text="击打频率"
+                />
+
+            <TextView
+                android:id="@+id/tv_frequency"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_f"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_strength_ratio"
+            style="@style/home_rl_one"
+            android:layout_below="@+id/rl_attention"
+            android:layout_toRightOf="@+id/rl_frequency">
+
+            <TextView
+                android:id="@+id/tv_g"
+                style="@style/home_text_three"
+                android:text="力   量   比"
+                />
+
+            <TextView
+                android:id="@+id/tv_strength_ratio"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_g"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nergy_ratio"
+            style="@style/home_rl_one"
+            android:layout_below="@+id/rl_attention"
+            android:layout_toRightOf="@+id/rl_strength_ratio">
+
+            <TextView
+                android:id="@+id/tv_h"
+                style="@style/home_text_three"
+                android:text="能   量   比"
+                />
+
+            <TextView
+                android:id="@+id/tv_nergy_ratio"
+                style="@style/home_text_four"
+                android:layout_toRightOf="@+id/tv_h"
+                android:text="10"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
